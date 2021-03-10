@@ -44,7 +44,7 @@ export declare type AggregateRating = {
 export interface ProductJsonLdProps {
   keyOverride?: string;
   productName: string;
-  productId?: string;
+  productID?: string;
   images?: string[];
   description?: string;
   brand?: string;
