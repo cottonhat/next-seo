@@ -56,6 +56,7 @@ export interface ProductJsonLdProps {
   keyOverride?: string;
   productName: string;
   productID?: string;
+  category?: string;
   images?: string[];
   description?: string;
   brand?: string;
@@ -169,6 +170,7 @@ const ProductJsonLd: FC<ProductJsonLdProps> = ({
   keyOverride,
   productName,
   productID,
+  category,
   images = [],
   description,
   sku,
@@ -190,6 +192,7 @@ const ProductJsonLd: FC<ProductJsonLdProps> = ({
     ${mpn ? `"mpn": "${mpn}",` : ''}
     ${sku ? `"sku": "${sku}",` : ''}
     ${productID ? `"productID": "${productID}",` : ''}
+    ${category ? `"category": "${category}",` : ''}
     ${gtin8 ? `"gtin8": "${gtin8}",` : ''}
     ${gtin13 ? `"gtin13": "${gtin13}",` : ''}
     ${gtin14 ? `"gtin14": "${gtin14}",` : ''}

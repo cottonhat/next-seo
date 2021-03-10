@@ -45,6 +45,7 @@ export interface ProductJsonLdProps {
   keyOverride?: string;
   productName: string;
   productID?: string;
+  category?: string;
   images?: string[];
   description?: string;
   brand?: string;
