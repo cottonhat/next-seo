@@ -168,6 +168,7 @@ const buildAggregateOffer = (offer: AggregateOffer) => `
 const ProductJsonLd: FC<ProductJsonLdProps> = ({
   keyOverride,
   productName,
+  productID,
   images = [],
   description,
   sku,
@@ -188,6 +189,7 @@ const ProductJsonLd: FC<ProductJsonLdProps> = ({
     ${description ? `"description": "${description}",` : ''}
     ${mpn ? `"mpn": "${mpn}",` : ''}
     ${sku ? `"sku": "${sku}",` : ''}
+    ${productID ? `"productID": "${productID}",` : ''}
     ${gtin8 ? `"gtin8": "${gtin8}",` : ''}
     ${gtin13 ? `"gtin13": "${gtin13}",` : ''}
     ${gtin14 ? `"gtin14": "${gtin14}",` : ''}
